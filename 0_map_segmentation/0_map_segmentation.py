@@ -108,10 +108,10 @@ def main(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Unified area segmentation script for topo / pp1300 / nickel / auto.")
-    parser.add_argument("--input", type=str, help="Input image path")
-    parser.add_argument("--output_dir", type=str, help="Output directory")
-    parser.add_argument("--intermediate_dir", type=str, nargs="?", default=None, help="Intermediate/debug output directory")
+    parser = argparse.ArgumentParser(description="0_Map_Segmentation")
+    parser.add_argument("--input", type=str, help="Path to input image")
+    parser.add_argument("--output_dir", type=str, help="Path to output directory")
+    parser.add_argument("--intermediate_dir", type=str, nargs="?", default=None, help="Path to intermediate output directory")
     parser.add_argument("--device", type=str, default="cuda", choices=["cuda", "cpu"], help="Execution device")
     parser.add_argument("--controller", type=str, default="auto", choices=["topo", "pp1300", "nickel", "auto"], help="Algorithm controller")
     parser.add_argument("--debug_mode", action="store_true", help="Enable extra debugging images where applicable")
