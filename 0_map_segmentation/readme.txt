@@ -1,6 +1,6 @@
 ## How to run 
 
-The following are the input parameters: 
+Please run '0_map_segmentation.py' with the following parameters: 
 
 ```
 --input: path to input image
@@ -10,4 +10,4 @@ The following are the input parameters:
 --controller: default to "auto" (choose among "topo", "pp1300", "nickel", "auto")
 ```
 
-Please adjust the controller depending on the datasets, or use "auto" to proceed with a classifier. 
+Please adjust the controller based on the datasets, or use "auto" to proceed with a classifier automatically. 
